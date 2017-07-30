@@ -52,7 +52,7 @@ class CalculatorController extends Controller
                     }
                     break;
                 case'√':
-                    $result = pow($leftOperand, $rightOperand);
+                    $result = pow($leftOperand, 1/$rightOperand);
                     break;
                 case'|':
                     $result = sprintf( "%08d",decbin($leftOperand | $rightOperand));
